@@ -19,6 +19,14 @@ body {
   min-width: 50rem;
 }
 
+.page-title {
+    /* font-size: ; */
+}
+
+.page-title-cuts {
+    text-decoration:line-through
+}
+
 /* nav */
 nav {
   display: flex;
@@ -55,6 +63,14 @@ main {
   margin: 2rem 15rem;
 }
 
+/* intro */
+
+/* table of contents */
+.table-of-contents a{
+    /* margin: 0 1rem; */
+    /* why are the circles so far? */
+}
+
 li a {
   color: black;
   background-color: white;
@@ -66,20 +82,20 @@ li a {
 }
 
 #list-commands,
-#github-actions {
+#github-commands {
   border: 5px solid lightblue;
   border-radius: 5px;
 }
 
 #list-commands li,
-#github-actions li {
+#github-commands li {
   background-color: gray;
   list-style: none;
 }
 
 /* footer */
 footer {
-  background-color: rgb(46, 45, 45);
+  background-color: #2e2d2d;
   height: 5rem;
   top: 0;
   display: flex;
@@ -96,6 +112,10 @@ footer a {
   background-color: transparent;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.fa-brands {
+    font-size: 30px;
 }
+
+/* .footer-links a:hover {
+  text-decoration: underline;
+} */
