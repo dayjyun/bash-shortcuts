@@ -13,22 +13,26 @@ body {
   line-height: 1.5;
   list-style: none;
   min-width: 30rem;
+
   /* make it a display grid */
+  /* display: grid; */
+  /* grid-template-rows: 1fr 2fr 1fr; */
+  /* grid-template-columns: ; */
   /* 3 rows */
   /* 3 columns. Only middle but left/right are empty */
 }
 
 header {
-  /* background-color: aqua; */
   background-image: var(--nav-gradient);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 50px;
+
   background-size: 500%;
   background-image: var(--nav-gradient);
+  --nav-gradient: linear-gradient(45deg, #70b096, #7ba1b5, #73718f);
   animation: navigation-bar-color 30s infinite alternate;
-  --nav-gradient: linear-gradient(45deg, #c99999, #7ba1b5, #504e6d, #7e376a);
 }
 
 @keyframes navigation-bar-color {
@@ -47,11 +51,16 @@ main {
 a {
   text-decoration: none;
 }
+li a {
+    color: black;
+    background-color: white;;
+}
 
 li {
   /* display: inline-block; */
   color: rgb(223, 223, 223);
   background-color: gray;
+
 }
 
 footer {
