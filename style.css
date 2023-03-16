@@ -12,17 +12,50 @@ body {
   font-size: 16px;
   line-height: 1.5;
   list-style: none;
+  min-width: 30rem;
+  /* make it a display grid */
+  /* 3 rows */
+  /* 3 columns. Only middle but left/right are empty */
 }
 
 
 header {
-    border: 2px solid red;
+    background-color: aqua;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 50px;
 }
 
+main {
+    margin: 2rem 10rem;
+}
+
 a {
   text-decoration: none;
+}
+
+li {
+    /* display: inline-block; */
+    color: rgb(223, 223, 223);
+    background-color: gray;
+}
+
+footer {
+    background-color: rgb(46, 45, 45);
+    height: 5rem;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer-links a {
+    margin: 10px;
+    color: white;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
