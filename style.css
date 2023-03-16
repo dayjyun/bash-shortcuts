@@ -18,17 +18,30 @@ body {
   /* 3 columns. Only middle but left/right are empty */
 }
 
-
 header {
-    background-color: aqua;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
+  /* background-color: aqua; */
+  background-image: var(--nav-gradient);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  background-size: 500%;
+  background-image: var(--nav-gradient);
+  animation: navigation-bar-color 30s infinite alternate;
+  --nav-gradient: linear-gradient(45deg, #c99999, #7ba1b5, #504e6d, #7e376a);
+}
+
+@keyframes navigation-bar-color {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 main {
-    margin: 2rem 10rem;
+  margin: 2rem 10rem;
 }
 
 a {
@@ -36,26 +49,31 @@ a {
 }
 
 li {
-    /* display: inline-block; */
-    color: rgb(223, 223, 223);
-    background-color: gray;
+  /* display: inline-block; */
+  color: rgb(223, 223, 223);
+  background-color: gray;
 }
 
 footer {
-    background-color: rgb(46, 45, 45);
-    height: 5rem;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: rgb(46, 45, 45);
+  height: 5rem;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
 .footer-links a {
-    margin: 10px;
-    color: white;
+  margin: 10px;
+  color: white;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
