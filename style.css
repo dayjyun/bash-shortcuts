@@ -1,12 +1,10 @@
 /* global */
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 100%;
-  /* line-height: 1; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -14,7 +12,6 @@ a {
 }
 
 /* body */
-
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -22,17 +19,17 @@ body {
   min-width: 50rem;
 }
 
-/* header */
-
-header {
+/* nav */
+nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50px;
+  height: 60px;
   background-size: 500%;
   background-image: var(--nav-gradient);
-  --nav-gradient: linear-gradient(45deg, #70b096, #7ba1b5, #73718f);
+  --nav-gradient: linear-gradient(45deg, #70b096, #80adc5, #9895c5);
   animation: navigation-bar-color 30s infinite alternate;
+  box-shadow: 1px 7px 400px 9px rgba(0,0,0,0.36);
 }
 
 @keyframes navigation-bar-color {
@@ -44,18 +41,16 @@ header {
   }
 }
 
-.header-links {
+.nav-links {
   height: 100%;
   max-width: 100rem;
   min-width: 50rem;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 /* main */
-
 main {
   margin: 2rem 15rem;
 }
@@ -83,7 +78,6 @@ li a {
 }
 
 /* footer */
-
 footer {
   background-color: rgb(46, 45, 45);
   height: 5rem;
@@ -99,6 +93,7 @@ footer a {
 
 .footer-links a {
   margin: 10px;
+  background-color: transparent;
 }
 
 .footer-links a:hover {
