@@ -53,13 +53,23 @@
           tasks, such as copying and pasting code, and focus on more important
           programming tasks.
         </p>
+
+        <p>Feel free to copy</p>
       </div>
 
       <div class="table-of-contents">
         <h2 class="table-of-contents-text">Table of contents</h2>
         <ul>
-          <li><a href="#list-commands">List commands</a></li>
-          <li><a href="#github-commands">GitHub commands</a></li>
+          <div>
+            <li><a href="#list-commands">List commands</a></li>
+            <ul>
+              <li><a href="#list">List</a></li>
+              <li><a href="#list-all">ls -a</a></li>
+            </ul>
+          </div>
+          <div>
+            <li><a href="#github-commands">GitHub commands</a></li>
+          </div>
         </ul>
       </div>
 
@@ -67,20 +77,20 @@
         <h2>List Commands</h2>
         Description about list commands
         <ul>
-          <div class="list">
+          <div id="list" class="list">
             <div>
-                <p>Description about la</p>
+              <p>Description about l</p>
             </div>
             <div>
-                <li class="code">alias la="ls-A"</li>
+              <li class="code">alias l="ls -CF"</li>
             </div>
           </div>
-          <div class="list">
+          <div id="list-all" class="list">
             <div>
-                <p>Description about l</p>
+              <p>Description about la</p>
             </div>
             <div>
-                <li class="code">alias l="ls -CF"</li>
+              <li class="code">alias la="ls-A"</li>
             </div>
           </div>
         </ul>
@@ -127,8 +137,10 @@
           </div>
 
           <div class="list">
-            <p><em>Teamwork makes the dream work</em><br>
-            The ultimage function. Description about combining it all together</p>
+            <p>
+              <em>Teamwork makes the dream work</em><br />
+              The ultimage function. Description about combining it all together
+            </p>
             <div>
               <pre class="code">
 
