@@ -97,7 +97,7 @@ main {
 
 /* table of contents */
 .table-of-contents {
-    padding: 1.2rem 1.2rem;
+    padding: 1.5rem 0;
 }
 
 .table-of-contents-text {
@@ -114,20 +114,21 @@ li a:hover{
 }
 
 ul ul {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .github-commands-tryme {
     font-weight: 600;
+    color: #8fd25f;
 }
 
 .github-commands-tryme:hover {
-    color: rgb(207, 207, 4);
+    color: black;
 }
 
-
+/* List commands, GitHub Commands */
 #list-commands {
-    padding: 3rem 0;
+    padding: 1rem 0 3rem 0;
 }
 
 .list {
@@ -138,6 +139,7 @@ ul ul {
     grid-template-columns: 1fr 1fr;
     padding: 5%;
     min-width: 10rem;
+    text-align: center;
 }
 
 .list div {
@@ -155,7 +157,6 @@ ul ul {
 
 #list-commands,
 #github-commands {
-  /* border: 5px solid lightblue; */
   border-radius: 5px;
 }
 

@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/311656131f.js"
       crossorigin="anonymous"
     ></script>
-    <title>Bash Shortcuts</title>
+    <title>Bash Shrtcuts</title>
   </head>
   <body>
     <nav>
@@ -21,7 +21,7 @@
             alt="website logo"
           />
           <h2 class="page-title">
-            Bash Short<span class="page-title-cuts">cuts</span>
+            Bash Shrt<span class="page-title-cuts">cuts</span>
           </h2>
         </div>
         <button class="light-dark-mode">Dark Mode</button>
@@ -61,21 +61,25 @@
         <h2 class="table-of-contents-text">Table of contents</h2>
         <ul>
           <div>
-            <li><a href="#list-commands">List commands</a></li>
+            <li>
+              <a href="#list-commands"><h3>List commands</h3></a>
+            </li>
             <ul>
               <li><a href="#list">ls</a></li>
               <li><a href="#list-all">ls -a</a></li>
             </ul>
           </div>
           <div>
-            <li><a href="#github-commands">GitHub commands</a></li>
+            <li>
+              <a href="#github-commands"><h3>GitHub commands</h3></a>
+            </li>
             <ul>
-                <li><a href="#git-status">git status</a></li>
-                <li><a href="#git-clone">git clone</a></li>
-                <li><a href="#git-add">git add .</a></li>
-                <li><a href="#git-commit">git commit -m</a></li>
-                <li><a href="#git-push">git push</a></li>
-                <li><a class="github-commands-tryme" href="#gacp">Try Me!</a></li>
+              <li><a href="#git-status">git status</a></li>
+              <li><a href="#git-clone">git clone</a></li>
+              <li><a href="#git-add">git add .</a></li>
+              <li><a href="#git-commit">git commit -m</a></li>
+              <li><a href="#git-push">git push</a></li>
+              <li><a class="github-commands-tryme" href="#gacp">Try Me!</a></li>
             </ul>
           </div>
         </ul>
@@ -87,19 +91,28 @@
         <ul>
           <div id="list" class="list">
             <div>
-              <p>Description about l</p>
+              <p>
+                You already have it easy by typing <em>ls</em>, why not make it
+                even easier?
+              </p>
             </div>
             <div>
               <li class="code">alias l="ls -CF"</li>
             </div>
+            <p><em>Ex: l</em></p>
           </div>
           <div id="list-all" class="list">
             <div>
-              <p>Description about la</p>
+              <p>
+                Typing <em>la -a</em> is already a hassle. Especially when your
+                hand needs to travel to the dash on your keyboard. Make your
+                trip easier by simply flying to <em>la</em>
+              </p>
             </div>
             <div>
               <li class="code">alias la="ls-A"</li>
             </div>
+            <p><em>Ex: la</em></p>
           </div>
         </ul>
       </div>
@@ -110,59 +123,73 @@
         <ul>
           <div id="git-status" class="list">
             <div>
-                <p>Description about git status</p>
+              <p>You still check your <em>git status</em>?</p>
             </div>
             <div>
               <li class="code">alias gs='git status'</li>
             </div>
+            <p><em>Ex: gs</em></p>
           </div>
           <div id="git-clone" class="list">
             <div>
-                <p>Description about cloning</p>
+              <p>
+                I'm sure you can have even more fun by shortening it some more
+              </p>
             </div>
             <div>
               <li class="code">alias gclone='git clone'</li>
             </div>
+            <p><em>Ex: gclone git@github.com:dayjyun/bash-shortcuts.git</em></p>
           </div>
           <div id="git-add" class="list">
             <div>
-                <p>description about add</p>
+              <p>
+                If you're like me and stage everything at once, then this code
+                is for you
+              </p>
             </div>
             <div>
               <li class="code">alias ga='git add .'</li>
             </div>
+            <p><em>Ex: ga</em></p>
           </div>
           <div id="git-commit" class="list">
             <div>
-                <p>Description about commiting</p>
+              <p>Description about commiting</p>
             </div>
             <div>
               <li class="code">alias gc='git commit -m'</li>
             </div>
+            <p><em>Ex: gc "your message here"</em></p>
           </div>
           <div id="git-push" class="list">
             <div>
-                <p>Description about push</p>
+              <p>It feels good to be submit working code</p>
             </div>
             <div>
               <li class="code">alias gp='git push'</li>
             </div>
+            <p><em>Ex: gp</em></p>
           </div>
           <div id="gacp" class="list">
             <div>
-                <p>
-                  <em>Teamwork makes the dream work</em><br />
-                  The ultimage function to push your code to GitHub in one line.
-                </p>
+              <p>
+                <em>Teamwork makes the dream work</em><br />
+                The ultimage function to push your code to GitHub in one
+                command. <br />
+                This combines the fun of adding, combining, and pushing your
+                code all at once
+              </p>
             </div>
             <div>
-              <li><pre class="code">
-
+              <li>
+                <pre style="text-align: left; padding: 10px" class="code">
     function gacp() {
         git add . && git commit -a -m "$1" && git push
-    }
-              </pre></li>
+    }</pre>
+              </li>
             </div>
+            <p><em>Ex: gacp "your message here"</em></p>
           </div>
         </ul>
       </div>
@@ -176,7 +203,7 @@
             src="git-bash-logo.png"
             alt="website logo"
           />
-          Bash Short<span class="page-title-cuts">cuts </span>
+          Bash Shrt<span class="page-title-cuts">cuts </span>
         </a>
       </h2>
       <p class="footer-reserved">© Kevin Barrios. All Rights Reserved</p>
