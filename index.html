@@ -56,7 +56,7 @@
       </div>
 
       <div class="table-of-contents">
-        <h2>Table of contents</h2>
+        <h2 class="table-of-contents-text">Table of contents</h2>
         <ul>
           <li><a href="#list-commands">List commands</a></li>
           <li><a href="#github-commands">GitHub commands</a></li>
@@ -68,15 +68,24 @@
         Description about list commands
         <ul>
           <div class="list">
-            <p>Description about la</p>
-            <li class="code">alias la="ls-A"</li>
+            <div>
+                <p>Description about la</p>
+            </div>
+            <div>
+                <li class="code">alias la="ls-A"</li>
+            </div>
           </div>
           <div class="list">
-            <p>Description about l</p>
-            <li class="code">alias l="ls -CF"</li>
+            <div>
+                <p>Description about l</p>
+            </div>
+            <div>
+                <li class="code">alias l="ls -CF"</li>
+            </div>
           </div>
         </ul>
       </div>
+
       <div id="github-commands">
         <h2>GitHub Commands</h2>
         <p>Description about GitHub commands</p>
@@ -116,16 +125,16 @@
               <li class="code">alias gp='git push'</li>
             </div>
           </div>
-          <h2>Function for all</h2>
-          <p style="font-style: italic">Teamwork makes the dream work</p>
+
           <div class="list">
-            <p>Description about combining it all together</p>
+            <p><em>Teamwork makes the dream work</em><br>
+            The ultimage function. Description about combining it all together</p>
             <div>
               <pre class="code">
 
-        function gacp() {
-            git add . && git commit -a -m "$1" && git push
-        }
+    function gacp() {
+        git add . && git commit -a -m "$1" && git push
+    }
               </pre>
             </div>
           </div>
