@@ -63,12 +63,20 @@
           <div>
             <li><a href="#list-commands">List commands</a></li>
             <ul>
-              <li><a href="#list">List</a></li>
+              <li><a href="#list">ls</a></li>
               <li><a href="#list-all">ls -a</a></li>
             </ul>
           </div>
           <div>
             <li><a href="#github-commands">GitHub commands</a></li>
+            <ul>
+                <li><a href="#git-status">git status</a></li>
+                <li><a href="#git-clone">git clone</a></li>
+                <li><a href="#git-add">git add .</a></li>
+                <li><a href="#git-commit">git commit -m</a></li>
+                <li><a href="#git-push">git push</a></li>
+                <li><a class="github-commands-tryme" href="#gacp">Try Me!</a></li>
+            </ul>
           </div>
         </ul>
       </div>
@@ -100,54 +108,60 @@
         <h2>GitHub Commands</h2>
         <p>Description about GitHub commands</p>
         <ul>
-          <div class="list">
-            <p>Description about git status</p>
+          <div id="git-status" class="list">
+            <div>
+                <p>Description about git status</p>
+            </div>
             <div>
               <li class="code">alias gs='git status'</li>
             </div>
           </div>
-          <div class="list">
-            <p>Description about cloning</p>
+          <div id="git-clone" class="list">
+            <div>
+                <p>Description about cloning</p>
+            </div>
             <div>
               <li class="code">alias gclone='git clone'</li>
             </div>
           </div>
-          <div class="list">
-            <p>description about add</p>
+          <div id="git-add" class="list">
+            <div>
+                <p>description about add</p>
+            </div>
             <div>
               <li class="code">alias ga='git add .'</li>
             </div>
           </div>
-          <div class="list">
-            <p>Description about commiting</p>
+          <div id="git-commit" class="list">
+            <div>
+                <p>Description about commiting</p>
+            </div>
             <div>
               <li class="code">alias gc='git commit -m'</li>
             </div>
           </div>
-          <div class="list">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              cupiditate veritatis laudantium. Mollitia vitae facilis ea
-              asperiores eum eligendi veniam cumque suscipit saepe, laboriosam
-              non tempore. Perferendis dolore pariatur voluptates.
-            </p>
+          <div id="git-push" class="list">
+            <div>
+                <p>Description about push</p>
+            </div>
             <div>
               <li class="code">alias gp='git push'</li>
             </div>
           </div>
-
-          <div class="list">
-            <p>
-              <em>Teamwork makes the dream work</em><br />
-              The ultimage function. Description about combining it all together
-            </p>
+          <div id="gacp" class="list">
             <div>
-              <pre class="code">
+                <p>
+                  <em>Teamwork makes the dream work</em><br />
+                  The ultimage function to push your code to GitHub in one line.
+                </p>
+            </div>
+            <div>
+              <li><pre class="code">
 
     function gacp() {
         git add . && git commit -a -m "$1" && git push
     }
-              </pre>
+              </pre></li>
             </div>
           </div>
         </ul>
@@ -156,7 +170,7 @@
 
     <footer>
       <h2 class="page-title">
-        <a href="/index.html">
+        <a href="#">
           <img
             class="git-bash-logo"
             src="git-bash-logo.png"
@@ -165,6 +179,7 @@
           Bash Short<span class="page-title-cuts">cuts </span>
         </a>
       </h2>
+      <p class="footer-reserved">© Kevin Barrios. All Rights Reserved</p>
       <div class="footer-links">
         <a title="GitHub" target="_blank" href="https://github.com/dayjyun">
           <i class="fa-brands fa-github"></i>

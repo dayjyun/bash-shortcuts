@@ -43,7 +43,6 @@ body {
 .git-bash-logo {
   height: 30px;
   background-color: transparent;
-  /* padding-right: 5px; */
 }
 
 img {
@@ -110,13 +109,31 @@ li a {
   background-color: white;
 }
 
+li a:hover{
+    font-weight: 600;
+}
+
+ul ul {
+    margin-left: 1rem;
+}
+
+.github-commands-tryme {
+    font-weight: 600;
+}
+
+.github-commands-tryme:hover {
+    color: rgb(207, 207, 4);
+}
+
+
 #list-commands {
     /* display: grid; */
     /* grid-template-columns: 1fr; */
 }
 
 .list {
-    border: 2px solid red;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    border-radius: 0 0 10px 10px ;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,7 +156,7 @@ li a {
 
 #list-commands,
 #github-commands {
-  border: 5px solid lightblue;
+  /* border: 5px solid lightblue; */
   border-radius: 5px;
 }
 
@@ -163,11 +180,17 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 3rem;
 }
 
 footer a {
   color: white;
   border-radius: 5px 5px 0 0;
+}
+
+.footer-reserved {
+    color: white;
+    padding: 0 1rem;
 }
 
 .footer-links a {
