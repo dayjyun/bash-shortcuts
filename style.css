@@ -5,7 +5,6 @@
   border: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  list-style: none;
 }
 
 a {
@@ -16,11 +15,15 @@ button:hover {
   cursor: pointer;
 }
 
+ul {
+    list-style: none;
+}
+
+
 /* body */
 body {
   font-size: 16px;
   line-height: 1.5;
-  list-style: none;
   min-width: 30rem;
 }
 
@@ -48,6 +51,7 @@ body {
 img {
   background-color: transparent;
 }
+
 
 /* nav */
 nav {
@@ -86,14 +90,30 @@ nav {
     padding-right: 8px;
 }
 
+
 /* main */
 main {
   max-width: 60rem;
   margin: 2rem auto;
-  padding: 0 2rem
+  padding: 0 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 /* intro */
+.intro-numbered-list {
+    padding: 5px;
+    padding-top: 15px;
+    margin-left: 2rem;
+    line-height: 1.5;
+}
+
 
 /* table of contents */
 .table-of-contents {
@@ -117,6 +137,10 @@ ul ul {
     margin-left: 1.5rem;
 }
 
+a > h3:hover {
+    text-decoration: underline;
+}
+
 .github-commands-tryme {
     font-weight: 600;
     color: #8fd25f;
@@ -125,6 +149,7 @@ ul ul {
 .github-commands-tryme:hover {
     color: black;
 }
+
 
 /* List commands, GitHub Commands */
 #list-commands {
@@ -198,4 +223,12 @@ footer a {
 
 .fa-brands {
   font-size: 30px;
+}
+
+.fa-github:hover {
+    color: #fe7e00
+}
+
+.fa-linkedin:hover {
+    color: #70b5f9;
 }

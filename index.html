@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/311656131f.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <title>Bash Shrtcts</title>
   </head>
   <body>
@@ -32,34 +32,63 @@
     <main>
       <div class="intro">
         <h1>Make Programming Easy</h1>
-        <!-- <p>
-          As developers, knowing keyboard shortcuts to implement when coding
-          speeds up productivity and saves time. Having your keyboard work the way you want to makes programming enjoyable with fewer errors.
-          As a programmer, you are already spending plenty of time typing code.
-          Instead of constantly switching back and forth between your mouse and keyboard,
-          stay
-        </p> -->
-
         <p>
-          Knowing keyboard shortcuts is essential for programmers because it
-          saves time and improves productivity. As a programmer, you spend a lot
-          of time typing code, and using keyboard shortcuts can significantly
-          speed up the process. Instead of constantly switching back and forth
-          between your mouse and keyboard, you can keep your hands on the
-          keyboard and use shortcuts to perform common tasks quickly.
+          As programmers, knowing keyboard shortcuts to implement when coding
+          speeds up productivity and saves time. You are already spending plenty
+          of hours typing code. Instead of constantly switching back and forth
+          between your mouse and keyboard, keep your hands in place and take
+          advantage of the simplicity offered with the shortcuts in-place to
+          make your life easier.
         </p>
-        <br>
+        <br />
         <p>
-          Additionally, creating a few of your own personalized commands
-          many programming tools and
-          text editors have a wide range of keyboard shortcuts that can help you
-          navigate, select, and edit code more efficiently. By learning and
-          using these shortcuts, you can reduce the time you spend on repetitive
-          tasks, such as copying and pasting code, and focus on more important
-          programming tasks.
+          On top of that, creating a few of your personalized commands is an
+          added feature to mastering code. Having your keyboard work the way you
+          want makes programming enjoyable and will cause less errors. Reduce
+          your time from moving away from the keyboard and focus on what's more
+          important in front of your screen.
         </p>
-        <br>
-        <p>Feel free to copy to code written in the blocks</p>
+        <br />
+        <p>
+          In order to build your own shortcuts, make sure you have the file
+          necessary to read them. Let's take care of that.
+        </p>
+        <p>
+          <em
+            >Note. This is intended for command lines running Bash. It may not
+            work in other shell languages.</em
+          >
+        </p>
+        <ol class="intro-numbered-list" style="list-style: decimal">
+          <li>Open up your CLI</li>
+          <li>Navigate to your root directory. Type <em>cd</em></li>
+          <li>
+            Open the <strong>.bash_profile</strong> file on VSCode. Type
+            <em>code .bash_profile</em>
+            <p>
+              If it's not present, create the file. Type
+              <em>touch .bash_profile</em>
+            </p>
+          </li>
+          <li>
+            Type your personalized command.
+            <p>
+                The code structure is
+                <em>alias [personalized shortcut name]="command to replace"</em>
+            </p>
+          </li>
+          <li>Save the file and restart your terminal</li>
+        </ol>
+        <br />
+        <p>
+          That's it! Now it's time to feel like a hacker and play around with
+          your newly created commands. You're on your way to faster, more
+          enjoyable programming.
+        </p>
+        <br />
+        <p>
+          Feel free to copy the code written in the blocks or try coming up with a few of your own!
+        </p>
       </div>
 
       <div class="table-of-contents">
@@ -81,8 +110,8 @@
             <ul>
               <li><a href="#git-status">git status</a></li>
               <li><a href="#git-clone">git clone</a></li>
-              <li><a href="#git-add">git add .</a></li>
-              <li><a href="#git-commit">git commit -m</a></li>
+              <li><a href="#git-add">git add</a></li>
+              <li><a href="#git-commit">git commit</a></li>
               <li><a href="#git-push">git push</a></li>
               <li><a class="github-commands-tryme" href="#gacp">Try Me!</a></li>
             </ul>
@@ -92,7 +121,6 @@
 
       <div id="list-commands">
         <h2>List Commands</h2>
-        Description about list commands
         <ul>
           <div id="list" class="list">
             <div>
@@ -115,7 +143,7 @@
               </p>
             </div>
             <div>
-              <li class="code">alias la="ls-A"</li>
+              <li class="code">alias la="ls -A"</li>
             </div>
             <p><em>Ex: la</em></p>
           </div>
@@ -124,28 +152,27 @@
 
       <div id="github-commands">
         <h2>GitHub Commands</h2>
-        <p>Description about GitHub commands</p>
         <ul>
-            <div id="git-clone" class="list">
-                <div>
-                    <p>
-                        I'm sure you can have even more fun by shortening it some more
-                    </p>
-                </div>
-                <div>
-                    <li class="code">alias gclone='git clone'</li>
-                </div>
-                <p><em>Ex: gclone git@github.com:dayjyun/bash-shortcuts.git</em></p>
+          <div id="git-clone" class="list">
+            <div>
+              <p>
+                I'm sure you can have even more fun by shortening it some more
+              </p>
             </div>
-            <div id="git-status" class="list">
-              <div>
-                <p>You still check your <em>git status</em>?</p>
-              </div>
-              <div>
-                <li class="code">alias gs='git status'</li>
-              </div>
-              <p><em>Ex: gs</em></p>
+            <div>
+              <li class="code">alias gclone="git clone"</li>
             </div>
+            <p><em>Ex: gclone git@github.com:dayjyun/bash-shortcuts.git</em></p>
+          </div>
+          <div id="git-status" class="list">
+            <div>
+              <p>You still check your <em>git status</em>?</p>
+            </div>
+            <div>
+              <li class="code">alias gs="git status"</li>
+            </div>
+            <p><em>Ex: gs</em></p>
+          </div>
           <div id="git-add" class="list">
             <div>
               <p>
@@ -154,7 +181,7 @@
               </p>
             </div>
             <div>
-              <li class="code">alias ga='git add .'</li>
+              <li class="code">alias ga="git add ."</li>
             </div>
             <p><em>Ex: ga</em></p>
           </div>
@@ -163,7 +190,7 @@
               <p>Description about commiting</p>
             </div>
             <div>
-              <li class="code">alias gc='git commit -m'</li>
+              <li class="code">alias gc="git commit -m"</li>
             </div>
             <p><em>Ex: gc "your message here"</em></p>
           </div>
@@ -172,7 +199,7 @@
               <p>It feels good to be submit working code</p>
             </div>
             <div>
-              <li class="code">alias gp='git push'</li>
+              <li class="code">alias gp="git push"</li>
             </div>
             <p><em>Ex: gp</em></p>
           </div>
@@ -191,7 +218,8 @@
                 <pre style="text-align: left; padding: 10px" class="code">
     function gacp() {
         git add . && git commit -a -m "$1" && git push
-    }</pre>
+    }</pre
+                >
               </li>
             </div>
             <p><em>Ex: gacp "your message here"</em></p>
