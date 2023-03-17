@@ -57,7 +57,7 @@ nav {
   height: 60px;
   background-size: 500%;
   background-image: var(--nav-gradient);
-  --nav-gradient: linear-gradient(45deg, #70b096, #80adc5, #9895c5);
+  --nav-gradient: linear-gradient(45deg, #ff8080, #8fd25f, #ffe680, #80b3ff);
   animation: navigation-bar-color 30s infinite alternate;
   box-shadow: 0px -17px 30px 9px rgba(0, 0, 0, 0.36);
   border-radius: 0 0 5px 5px;
@@ -127,8 +127,7 @@ ul ul {
 
 
 #list-commands {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
+    padding: 3rem 0;
 }
 
 .list {
