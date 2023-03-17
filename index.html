@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/311656131f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/311656131f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Bash Shortcuts</title>
   </head>
   <body>
     <nav>
       <div class="nav-links">
-        <h2 class="page-title">Bash Short<span class="page-title-cuts">cuts</span></h2>
+        <div class="git-bash-div">
+          <img
+            class="git-bash-logo"
+            src="git-bash-logo.png"
+            alt="website logo"
+          />
+          <h2 class="page-title">
+            Bash Short<span class="page-title-cuts">cuts</span>
+          </h2>
+        </div>
         <button class="light-dark-mode">Dark Mode</button>
       </div>
     </nav>
@@ -34,19 +46,18 @@
         </p>
 
         <p>
-          Additionally, creating a few of your own
-
-          many programming tools and text editors have a wide
-          range of keyboard shortcuts that can help you navigate, select, and
-          edit code more efficiently. By learning and using these shortcuts, you
-          can reduce the time you spend on repetitive tasks, such as copying and
-          pasting code, and focus on more important programming tasks.
+          Additionally, creating a few of your own many programming tools and
+          text editors have a wide range of keyboard shortcuts that can help you
+          navigate, select, and edit code more efficiently. By learning and
+          using these shortcuts, you can reduce the time you spend on repetitive
+          tasks, such as copying and pasting code, and focus on more important
+          programming tasks.
         </p>
       </div>
 
       <div class="table-of-contents">
         <h2>Table of contents</h2>
-        <ul class="quick-links">
+        <ul>
           <li><a href="#list-commands">List commands</a></li>
           <li><a href="#github-commands">GitHub commands</a></li>
         </ul>
@@ -54,65 +65,93 @@
 
       <div id="list-commands">
         <h2>List Commands</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at,
-        temporibus nihil maxime vero officiis sint nam nemo. Quas tempora
-        repellendus obcaecati, saepe qui voluptas. Enim pariatur facilis ratione
-        dolorem.
-
+        Description about list commands
         <ul>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-          ipsa sunt suscipit animi corrupti reprehenderit unde autem illum.
-          Quos, placeat officiis eligendi aut qui perspiciatis dolorem optio!
-          Praesentium, deleniti odit!
-          <li>alias la="ls-A"</li>
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam,
-          fugiat libero vel doloribus incidunt culpa nemo iste tempora natus!
-          Non reiciendis, asperiores nobis quibusdam quo dolores eaque culpa
-          enim.
-          <li>alias l="ls -CF"</li>
+          <div class="list">
+            <p>Description about la</p>
+            <li class="code">alias la="ls-A"</li>
+          </div>
+          <div class="list">
+            <p>Description about l</p>
+            <li class="code">alias l="ls -CF"</li>
+          </div>
         </ul>
       </div>
-
       <div id="github-commands">
         <h2>GitHub Commands</h2>
-        <p>
-          Description about GitHub commands
-        </p>
-
+        <p>Description about GitHub commands</p>
         <ul>
-          <p>Description about git status</p>
-          <li>alias gs='git status'</li>
-
-          <p>Description about cloning</p>
-          <li>alias gclone='git clone'</li>
-
-          <p>description about add</p>
-          <li>alias ga='git add .'</li>
-
-          <p>Description about commiting</p>
-          <li>alias gc='git commit -m'</li>
-
-          <p>Description about pushing</p>
-          <li>alias gp='git push'</li>
-
+          <div class="list">
+            <p>Description about git status</p>
+            <div>
+              <li class="code">alias gs='git status'</li>
+            </div>
+          </div>
+          <div class="list">
+            <p>Description about cloning</p>
+            <div>
+              <li class="code">alias gclone='git clone'</li>
+            </div>
+          </div>
+          <div class="list">
+            <p>description about add</p>
+            <div>
+              <li class="code">alias ga='git add .'</li>
+            </div>
+          </div>
+          <div class="list">
+            <p>Description about commiting</p>
+            <div>
+              <li class="code">alias gc='git commit -m'</li>
+            </div>
+          </div>
+          <div class="list">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              cupiditate veritatis laudantium. Mollitia vitae facilis ea
+              asperiores eum eligendi veniam cumque suscipit saepe, laboriosam
+              non tempore. Perferendis dolore pariatur voluptates.
+            </p>
+            <div>
+              <li class="code">alias gp='git push'</li>
+            </div>
+          </div>
           <h2>Function for all</h2>
-          <p>Teamwork makes the dream work</p>
-          <p>Description about combining it all together</p>
-          <li>
-            function gacp() {git add . && git commit -a -m "$1" && git push}
-          </li>
+          <p style="font-style: italic">Teamwork makes the dream work</p>
+          <div class="list">
+            <p>Description about combining it all together</p>
+            <div>
+              <pre class="code">
+
+        function gacp() {
+            git add . && git commit -a -m "$1" && git push
+        }
+              </pre>
+            </div>
+          </div>
         </ul>
       </div>
     </main>
 
     <footer>
-      <h2 class="page-title"><a href="/index.html">Bash Short<span class="page-title-cuts">cuts</a></h2>
+      <h2 class="page-title">
+        <a href="/index.html">
+          <img
+            class="git-bash-logo"
+            src="git-bash-logo.png"
+            alt="website logo"
+          />
+          Bash Short<span class="page-title-cuts">cuts </span>
+        </a>
+      </h2>
       <div class="footer-links">
         <a title="GitHub" target="_blank" href="https://github.com/dayjyun">
-            <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-github"></i>
         </a>
-        <a title="LinkedIn" target="'_blank" href="https://www.linkedin.com/in/kevinbarrios12/"
+        <a
+          title="LinkedIn"
+          target="'_blank"
+          href="https://www.linkedin.com/in/kevinbarrios12/"
           ><i class="fa-brands fa-linkedin"></i>
         </a>
       </div>

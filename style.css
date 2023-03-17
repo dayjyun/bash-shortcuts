@@ -5,10 +5,15 @@
   border: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* body */
@@ -16,15 +21,33 @@ body {
   font-size: 16px;
   line-height: 1.5;
   list-style: none;
-  min-width: 50rem;
+  min-width: 20rem;
 }
 
 .page-title {
-    /* font-size: ; */
+  font-size: 30px;
+  position: relative;
+  color: white;
 }
 
 .page-title-cuts {
-    text-decoration:line-through
+  text-decoration: line-through;
+}
+
+.git-bash-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.git-bash-logo {
+  height: 30px;
+  background-color: transparent;
+  /* padding-right: 5px; */
+}
+
+img {
+  background-color: transparent;
 }
 
 /* nav */
@@ -37,7 +60,8 @@ nav {
   background-image: var(--nav-gradient);
   --nav-gradient: linear-gradient(45deg, #70b096, #80adc5, #9895c5);
   animation: navigation-bar-color 30s infinite alternate;
-  box-shadow: 1px 7px 400px 9px rgba(0,0,0,0.36);
+  box-shadow: 0px -17px 30px 9px rgba(0, 0, 0, 0.36);
+  border-radius: 0 0 5px 5px;
 }
 
 @keyframes navigation-bar-color {
@@ -51,24 +75,30 @@ nav {
 
 .nav-links {
   height: 100%;
-  max-width: 100rem;
-  min-width: 50rem;
+  width: 80rem;
+  min-width: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 3rem;
+}
+
+.git-bash-div .git-bash-logo {
+    padding-right: 8px;
 }
 
 /* main */
 main {
-  margin: 2rem 15rem;
+  max-width: 60rem;
+  margin: 2rem auto;
 }
 
 /* intro */
 
 /* table of contents */
-.table-of-contents a{
-    /* margin: 0 1rem; */
-    /* why are the circles so far? */
+.table-of-contents {
+    padding: 1.2rem 0;
+    margin: 0 1.2rem;
 }
 
 li a {
@@ -76,9 +106,14 @@ li a {
   background-color: white;
 }
 
-.quick-links {
-  color: rgb(223, 223, 223);
-  width: 50%;
+.list {
+    border: 2px solid red;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
 }
 
 #list-commands,
@@ -87,16 +122,21 @@ li a {
   border-radius: 5px;
 }
 
-#list-commands li,
-#github-commands li {
-  background-color: gray;
-  list-style: none;
+/* #list-commands li, */
+/* #github-commands li */
+.code {
+  background-color: rgb(223, 222, 213);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid cadetblue
 }
 
 /* footer */
 footer {
   background-color: #2e2d2d;
-  height: 5rem;
+  height: 5.5rem;
   top: 0;
   display: flex;
   justify-content: space-around;
@@ -113,9 +153,5 @@ footer a {
 }
 
 .fa-brands {
-    font-size: 30px;
+  font-size: 30px;
 }
-
-/* .footer-links a:hover {
-  text-decoration: underline;
-} */
